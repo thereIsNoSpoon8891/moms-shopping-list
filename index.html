@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>Mom's Shopping List</title>
+    <title>My shopping list</title>
 </head>
 <body>
     <div class="title-bar">
-        <h1 class="title">Mom's Shopping List</h1>
+        <h1 class="title">My Shopping List</h1>
     </div>
     <div class="main">
         <div class="title-bar">
             <h3 class="title">Add Item</h3>
         </div>
-        <form name="addItem" id="add-todo">
-            <label class="label" for="title">Item name</label>
-            <input class="input" name="title" id="title" placeholder="Food"/>
-            <button>submit</button>
+        <form class="form" name="addItem" id="add-todo">
+            <input type="text" class="input" name="title" id="title" placeholder="Add New Item"/>
+            <input type="number" class="quantity input" name="quantity" id="quantity" placeholder="Quantity"/>
+            <button class="submitBtn">ADD</button>
         </form>
         <div class="todos">
             <div class="title-bar">
-                <h3 class="title">list of items</h3>
+                <h3 class="title">list</h3>
             </div>
             <hr>
-            <ul id="list">
- 
-                <hr>              
+            <ul id="list">            
             </ul>
         </div>
     </div>

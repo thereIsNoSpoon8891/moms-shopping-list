@@ -15,7 +15,7 @@ list.addEventListener("submit", function(e){
    
     let newEditBox = document.createElement('button')// step 1
 
-    newEditBox.textContent = 'edit'                 // step 2
+    newEditBox.textContent = 'change'                 // step 2
 
     document.getElementById('list').append(newEditBox) // step 3
 
@@ -27,7 +27,7 @@ list.addEventListener("submit", function(e){
     
     newItem.appendChild(newEditBox)//.setAttribute('id','newEditBox' )
     newEditBox.setAttribute('class', 'edit-button')
-                        // ^ set the attribute so you can call it to a function ^ 
+                        // ^ set the attribute so you can assign eventlistener ^ 
     
     newItem.appendChild(newDeleteButton)//.setAttribute('id', 'newDeleteButton')
 
@@ -63,16 +63,7 @@ list.addEventListener("submit", function(e){
 
 
 // 3 step process 
-    // 1. createElement, capture in a variable 
-    // 2. edit the content: variable.textcontent 
-    // 3. append it: document.querySelector('ID').append(variable)
+    // 1. createElement, capture in a variable: const variable = document.createElement("li")
+    // 2. edit the content: variable.textContent = "content" 
+    // 3. append it: document.getElementById('id').append(variable)
 
-    // new item appended to the list with edit and delete buttons
-
-                // makinging the delete button function
-    
-                // let deleteButton = document.querySelector('')
-    
-                // deleteButton.addEventListener('click', function(e){
-        
-                // .remove()

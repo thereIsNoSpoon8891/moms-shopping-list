@@ -1,5 +1,13 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
 .title {
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-decoration: underline;
 }
 
 .main {
@@ -11,7 +19,13 @@
 #add-item {
     border: 1px solid black;
 }
-
+.submitBtn{
+    margin: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
 .input {
     width: 100%;
     padding: 12px 20px;
